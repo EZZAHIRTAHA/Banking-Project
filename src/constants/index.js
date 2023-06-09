@@ -167,7 +167,7 @@ export const socialMedia = [
   },
   {
     id: "social-media-3",
-    icon: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+    icon: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
     link: "https://github.com/EZZAHIRTAHA",
   },
   {
