@@ -1,7 +1,10 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero,BackToTop } from "./components";
+import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => (
+
+  
   <div className="bg-primary w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
@@ -11,9 +14,12 @@ const App = () => (
     </div>
 
     <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
+        <div className={`${styles.boxWidth}`}>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+      </Routes>
+      <BackToTop />
+    </div>
     </div>
     
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
@@ -29,6 +35,8 @@ const App = () => (
       </div>
     </div>
   </div>
+  
+
 );
 
 export default App;

@@ -1,7 +1,10 @@
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+
+
+
 
 const Navbar = () => {
 
@@ -11,13 +14,15 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={`./logo1.png`} alt="hoobank" className="w-[10%] rounded-full border-[1px] border-[#51d7e0]" />
+      <Link to={`/`}>
+        <img src={`./logo1.png`} alt="" className="w-[20%] rounded-full border-[1px] border-[#51d7e0]" />
+      </Link>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal cursor-pointer text-xl ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
