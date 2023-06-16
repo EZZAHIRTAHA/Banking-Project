@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { close, logo, menu } from "../assets";
+import { Link, NavLink } from "react-router-dom";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 
 
@@ -30,9 +30,22 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+          
+        <li className={`font-poppins font-normal cursor-pointer text-xl text-dimWhite ml-10`}>
+          <NavLink to={'/login'} className="font-white font-normal cursor-pointer text-xl">
+            Sign In
+          </NavLink>
+
+        </li>
+        <li className={`font-poppins font-normal cursor-pointer text-xl text-dimWhite ml-10`}>
+          <NavLink to={'/register'} className="font-white font-normal cursor-pointer text-xl">
+            Sign Up
+          </NavLink>
+
+        </li>
       </ul>
       
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="sm:hidden cursor-pointer hover:shadow-xl shadow-white flex flex-1 justify-end items-center">
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -57,6 +70,18 @@ const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+            <li className={`font-poppins font-medium cursor-pointer text-[16px] text-dimWhite`}>
+          <NavLink to={'/login'} className="mb-4 my-2">
+            Sign In
+          </NavLink>
+
+        </li>
+        <li className={`font-poppins font-medium cursor-pointer text-[16px] text-dimWhite`}>
+          <NavLink to={'/register'} className="mb-4 mt-6">
+            Sign Up
+          </NavLink>
+
+        </li>
           </ul>
         </div>
       </div>

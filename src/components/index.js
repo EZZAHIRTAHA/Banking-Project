@@ -9,6 +9,8 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 export {default as BackToTop} from "./BackToTop"
+export {default as Login} from "./Login"
+export {default as Register} from "./Register"
 
 export {
   Navbar,

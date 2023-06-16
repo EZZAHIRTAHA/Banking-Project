@@ -1,6 +1,6 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero,BackToTop } from "./components";
-import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero,BackToTop, Login, Register } from "./components";
+import { Link, Routes, Route } from "react-router-dom";
 
 const App = () => (
 
@@ -15,8 +15,11 @@ const App = () => (
 
     <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
+          
       <Routes>
         <Route path="/" element={<Hero />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<Register/>} />
       </Routes>
       <BackToTop />
     </div>
@@ -24,12 +27,12 @@ const App = () => (
     
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Stats />
         <Business />
+        <Stats />
         <Billing />
-        <CardDeal />
         <Testimonials />
         <Clients />
+        <CardDeal />
         <CTA />
         <Footer />
       </div>
