@@ -5,7 +5,7 @@ import { Link, Routes, Route } from "react-router-dom";
 const App = () => (
 
   
-  <div className="bg-primary w-full overflow-hidden">
+  <div className="bg-primary w-full overflow-hidden ">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
@@ -13,7 +13,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`bg-primary ${styles.flexStart} scale-up-center`}>
         <div className={`${styles.boxWidth}`}>
           
       <Routes>
