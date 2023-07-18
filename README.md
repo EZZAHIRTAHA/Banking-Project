@@ -6,7 +6,9 @@
 
 ## Description
 
-<b>This project aims to provide a modern and user-friendly banking experience through its intuitive user interface and smooth user experience. It offers essential banking features such as user authentication, account overview, transaction history, fund transfers, and bill payments.</b>
+<b>
+This Single Page Application (SPA) project aims to provide a modern and user-friendly banking experience through its intuitive user interface and smooth user experience. The entire application is contained within a single web page, eliminating the need for page refreshes and providing a seamless interaction for users. It offers essential banking features such as user authentication, account overview, transaction history, fund transfers, and bill payments.
+</b>
 
 
 
